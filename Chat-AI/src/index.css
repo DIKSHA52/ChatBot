@@ -1,0 +1,93 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #a2c2e2, #f4f4f9);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4a90e2;
+  text-align: center;
+  font-weight: 700;
+}
+
+.textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1em;
+  resize: none;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+}
+
+.generate-button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  color: #ffffff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.generate-button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+}
+
+.generate-button:active {
+  transform: translateY(0);
+}
+
+.answer-output {
+  white-space: pre-wrap;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 60px;
+  color: #333;
+  border: 1px solid #e0e0e0;
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
+.answer-output::before {
+  content: "Answer:";
+  font-weight: 600;
+  color: #4a90e2;
+  display: block;
+  margin-bottom: 10px;
+}
